@@ -1,0 +1,31 @@
+/* line 1, app/assets/stylesheets/diagram.scss */
+.agent-diagram {
+  position: relative;
+  z-index: auto;
+}
+
+/* line 5, app/assets/stylesheets/diagram.scss */
+.agent-diagram svg.diagram {
+  position: absolute;
+  z-index: 1;
+}
+
+/* line 10, app/assets/stylesheets/diagram.scss */
+.agent-diagram .overlay-container {
+  z-index: auto;
+}
+
+/* line 13, app/assets/stylesheets/diagram.scss */
+.agent-diagram .overlay-container .overlay {
+  z-index: auto;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 18, app/assets/stylesheets/diagram.scss */
+.agent-diagram .overlay-container .overlay .badge {
+  position: absolute;
+  display: none;
+  color: white !important;
+  z-index: 2;
+}
