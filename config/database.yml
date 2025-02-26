@@ -35,7 +35,7 @@ production:
   pool: <%= ENV['DATABASE_POOL'].presence || "20" %>
   username: <%= ENV['DATABASE_USERNAME'].presence || "root" %>
   password: <%= ENV['DATABASE_PASSWORD'].presence || "password" %>
-  host: <%= ENV['DATABASE_HOST'] || "" %>
+  host: <%= ENV['DATABASE_HOST'].present? ? nil : ([...your fallback array...].find{ |path| File.exist? path }) %>
   port: <%= ENV['DATABASE_PORT'] || "" %>
   socket: <%= ENV['DATABASE_SOCKET'] || ["/var/run/mysqld/mysqld.sock", "/opt/local/var/run/mysql5/mysqld.sock", "/tmp/mysql.sock"].find{ |path| File.exist? path } %>
   strict: false
