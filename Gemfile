@@ -40,6 +40,7 @@ gem 'rturk', '~> 2.12.1'          # HumanTaskAgent
 gem 'slack-notifier', '~> 2.4.0'  # SlackAgent
 gem 'twilio-ruby', '~> 7.4.0'     # TwilioAgent
 gem 'xmpp4r', '~> 0.5.6'          # JabberAgent
+gem 'puma'
 
 # Weibo Agents
 # FIXME needs to loosen omniauth dependency, add rest-client
@@ -166,7 +167,6 @@ group :development do
   group :test do
     gem 'capybara'
     gem 'capybara-select-2', github: 'Hirurg103/capybara_select2', require: false
-    gem 'puma'
     gem 'rails-controller-testing'
     gem 'rr', require: false
     gem 'rspec'
@@ -178,7 +178,6 @@ group :development do
     gem 'simplecov', require: false
     gem 'simplecov-lcov', '~> 0.8.0', require: false
     gem 'vcr'
-    gem 'webmock'
   end
 end
 
