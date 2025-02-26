@@ -178,6 +178,7 @@ group :development do
     gem 'simplecov', require: false
     gem 'simplecov-lcov', '~> 0.8.0', require: false
     gem 'vcr'
+    gem 'webmock'
   end
 end
 
