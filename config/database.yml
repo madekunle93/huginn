@@ -30,9 +30,9 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: <%= ENV['DATABASE_NAME'].presence || "huginn_production" %>
+  database: <%= ENV['DATABASE_NAME'].presence || "my_first_postgresql_fro9" %>
   pool: <%= ENV['DATABASE_POOL'].presence || 5 %>
-  username: <%= ENV['DATABASE_USERNAME'].presence || "root" %>
-  password: <%= ENV['DATABASE_PASSWORD'].presence || "password" %>
-  host: <%= ENV['DATABASE_HOST'] || "" %>
+  username: <%= ENV['DATABASE_USERNAME'].presence || "my_first_postgresql_fro9_user" %>
+  password: <%= ENV['DATABASE_PASSWORD'].presence || "IYftdUCo0qbY0SnI7RISmduevZcE9kpR" %>
+  host: <%= ENV['DATABASE_HOST'] || "dpg-cuvnml1u0jms739n2ca0-a" %>
   port: <%= ENV['DATABASE_PORT'] || 5432 %>
